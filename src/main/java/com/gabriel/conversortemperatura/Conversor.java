@@ -19,7 +19,7 @@ public class Conversor {
 		fahrenheit = (celsius*1.8)+32.0;
 
 		this.getTemp().setTemperatura(fahrenheit);
-		System.out.printf(celsius+"°C é equivalente à %.2f°F", this.getTemp().getTemperatura());
+		System.out.printf(celsius+"°C é equivalente à %.2f°F \n", this.getTemp().getTemperatura());
 	}
 
 	public void alterar(){
