@@ -1,7 +1,9 @@
 package com.gabriel.conversortemperatura;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -9,12 +11,17 @@ import org.junit.Test;
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
+    private Conversor conv;
+	
+    @Before
+	public void setup() {
+		conv = new Conversor(28);
+	}
+    
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void testeConvertendoDeCelsiusParaFahrenheit() {
+        conv.alterar();
+
+        assertEquals(conv.getTemp().getTemperatura(), 50.00);
     }
 }

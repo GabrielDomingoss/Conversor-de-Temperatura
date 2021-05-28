@@ -5,14 +5,11 @@ import java.util.Scanner;
 public class App 
 {
     public static void main( String[] args )
-    {
+    {	
     	Scanner entrada = new Scanner(System.in);
-		double celsius, fahrenheit;
-		
-		System.out.println("Digite uma temperatura em Celsius para converter para Fahrenheit: ");
-		celsius = entrada.nextDouble();
-		fahrenheit=(celsius*1.8)+32;
-
-		System.out.println(celsius+"C e equivalente a " + fahrenheit + "F\n");
+    	System.out.println("Digite um valor em Celsius para converter para Fahrenheit: ");
+    	int valor = entrada.nextInt();
+		Conversor conv = new Conversor(valor);
+		conv.alterar();
     }
 }
