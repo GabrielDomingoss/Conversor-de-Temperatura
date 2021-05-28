@@ -1,10 +1,8 @@
 package com.gabriel.conversortemperatura;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
 
 /**
  * Unit test for simple App.
@@ -13,15 +11,15 @@ public class AppTest
 {
     private Conversor conv;
 	
-    @Before
+    @BeforeEach
 	public void setup() {
 		conv = new Conversor(28);
 	}
     
     @Test
-    public void testeConvertendoDeCelsiusParaFahrenheit() {
+    public void testeConversao() {
         conv.alterar();
 
-        assertEquals(conv.getTemp().getTemperatura(), 50.00);
+        assertEquals(conv.getTemp().getTemperatura(), 82.40);
     }
 }
