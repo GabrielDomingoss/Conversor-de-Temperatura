@@ -22,16 +22,24 @@ public class AppTest
 	}
     
     @Test
-    public void testeConversao() {
+    public void testeConversao1() {
         conv.alterar();
-        conv2.alterar();
-        conv3.alterar();
-        double resultado1,resultado2,resultado3;
+        double resultado1;
         resultado1 = conv.getTemp().getTemperatura();
-        resultado2 = conv2.getTemp().getTemperatura();
-        resultado3 = conv3.getTemp().getTemperatura();
         assertEquals(resultado1, 82.40);
+    }
+    @Test
+    public void testeConversao2() {
+        conv2.alterar();
+        double resultado2;
+        resultado2 = conv2.getTemp().getTemperatura();
         assertEquals(resultado2, 131.00);
+    }
+    @Test
+    public void testeConversao3() {
+        conv3.alterar();
+        double resultado3;
+        resultado3 = conv3.getTemp().getTemperatura();
         assertEquals(resultado3, 104.00);
     }
 }
