@@ -23,7 +23,6 @@ public class AppTest
     
     @Test
     public void testeConversao1() {
-        System.out.printf("Temperatura em Celsius: %.2f \n", conv.getTemp().getTemperatura());
         conv.alterar();
         double resultado1;
         resultado1 = conv.getTemp().getTemperatura();
@@ -31,7 +30,6 @@ public class AppTest
     }
     @Test
     public void testeConversao2() {
-        System.out.printf("Temperatura em Celsius: %.2f \n", conv2.getTemp().getTemperatura());
         conv2.alterar();
         double resultado2;
         resultado2 = conv2.getTemp().getTemperatura();
@@ -39,7 +37,6 @@ public class AppTest
     }
     @Test
     public void testeConversao3() {
-        System.out.printf("Temperatura em Celsius: %.2f \n", conv3.getTemp().getTemperatura());
         conv3.alterar();
         double resultado3;
         resultado3 = conv3.getTemp().getTemperatura();

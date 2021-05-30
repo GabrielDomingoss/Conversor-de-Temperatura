@@ -5,6 +5,7 @@ public class Conversor {
 
 	public Conversor(double temperatura) {
 		this.temp = new Temperatura(temperatura);
+		System.out.printf("Temperatura em Celsius: %.2f \n", this.getTemp().getTemperatura());
 	}
 
 	public Temperatura getTemp(){
