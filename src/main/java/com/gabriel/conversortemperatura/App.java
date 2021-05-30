@@ -11,5 +11,4 @@ public class App
     	int valor = entrada.nextInt();
 		Conversor conv = new Conversor(valor);
 		conv.alterar();
-    }
 }
