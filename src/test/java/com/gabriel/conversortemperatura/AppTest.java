@@ -35,7 +35,7 @@ public class AppTest
         conv2.alterar();
         double resultado2;
         resultado2 = conv2.getTemp().getTemperatura();
-        assertEquals(resultado2, 131.00);
+        assertEquals(resultado2, 0.00);
     }
     @Test
     public void testeConversao3() {
